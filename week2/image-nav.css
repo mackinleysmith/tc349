@@ -1,0 +1,2 @@
+nav[role="navigation"] ul li a {background:#F9E9A9 url(images/off_bg.gif) repeat-x top left;}
+nav[role="navigation"] ul li a:hover, body#intro #t-intro a, body#about #t-about a, body#news #t-news a, body#sponsors #t-sponsors a {background:#fff url(images/on_bg.gif) repeat-x top left;}

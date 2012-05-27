@@ -1,6 +1,33 @@
-<ul id="nav">
-	<li id="t-intro"><a href="/">Introduction</a></li>
-	<li id="t-about"><a href="about.html">About Lance</a></li>
-	<li id="t-news"><a href="news.html">News &amp; Events</a></li>
-	<li id="t-sponsors"><a href="sponsors.html">Sponsors</a></li>
-</ul>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="MacKinley Smith">
+		<title>TC349 Week 2: Scalable Navigation</title>
+		<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="image-nav.css" id="version_style" />
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="nav-enhancements.js"></script>
+	</head>
+	<body id="intro">
+		<h1>TC349 Week 2: Scalable Navigation</h1>
+		<p>This page demonstrates two separate versions of the navigation exercise found in Dan Cederholm's <em>Bulletproof Web Design</em> (3rd Edition).  I have expanded the model outlined in the book by adding a jQuery-powered stylesheet switcher.  The two versions share quite a bit of common CSS code, so I've stored that in a main stylesheet, <a href="style.css">style.css</a> which I included on all pages.  All unique bits of code have been stored in two separate css files, <a href="image-nav.css">image-nav.css</a> and <a href="gradient-nav.css">gradient-nav.css</a> for the image and css-only versions respectively.  A third stylesheet, <a href="both-nav.css">both-nav.css</a>, was created to allow for side-by-side comparison between the two versions. Although no changes can be observed when switching stylesheets, proof that the navigation has been re-rendered using different code can be found by inspecting this page using a developer's console such as <a href="http://getfirebug.com/" target="_blank">Firebug</a>.</p>
+		<p>I also took the liberty of setting up the navigation tabs to actually switch focus when clicked, also using jQuery.  In order to accomplish this without leaving the page, I have prevented the default action of the links contained in each tab.  The links on the static copies below will work as expected.</p>
+		<p><strong>Static copies of each version: <a href="image.html">Image Version</a> | <a href="gradient.html">CSS-only Version</a>.</strong></p>
+		<h3 id="version_title">Image Version</h3>
+		<nav role="navigation">
+			<ul>
+				<li id="t-intro"><a href="/">Home</a></li>
+				<li id="t-about"><a href="about.html">Why Lance Rules</a></li>
+				<li id="t-news"><a href="news.html">The Latest News</a></li>
+				<li id="t-sponsors"><a href="sponsors.html">People Who Like Lance</a></li>
+			</ul>
+		</nav>
+		<h3>Stylesheet Switcher</h3>
+		<ul id="stylesheet_switcher">
+			<li class="active"><a href="image-nav.css">Image Version</a></li>
+			<li><a href="gradient-nav.css">CSS-only Version</a></li>
+			<li class="both_versions"><a href="both-nav.css">Both Versions</a></li>
+		</ul>
+	</body>
+</html>

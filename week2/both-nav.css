@@ -1,0 +1,22 @@
+nav[role="navigation"] ul#image_version li a {background:#F9E9A9 url(images/off_bg.gif) repeat-x top left;}
+nav[role="navigation"] ul li a:hover, body#intro #t-intro a, body#about #t-about a, body#news #t-news a, body#sponsors #t-sponsors a {background:#fff url(images/on_bg.gif) repeat-x top left;}
+nav[role="navigation"] ul#css_version li a {
+	background: rgb(231,212,154);
+	background: -moz-linear-gradient(top, rgba(231,212,154,1) 0%, rgba(255,230,169,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(231,212,154,1)), color-stop(100%,rgba(255,230,169,1)));
+	background: -webkit-linear-gradient(top, rgba(231,212,154,1) 0%,rgba(255,230,169,1) 100%);
+	background: -o-linear-gradient(top, rgba(231,212,154,1) 0%,rgba(255,230,169,1) 100%);
+	background: -ms-linear-gradient(top, rgba(231,212,154,1) 0%,rgba(255,230,169,1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e7d49a',endColorstr='#ffe6a9',GradientType=0);
+	background: linear-gradient(top,rgba(231,212,154,1) 0%,rgba(255,230,169,1) 100%);
+}
+nav[role="navigation"] ul li a:hover, body#intro #t-intro a, body#about #t-about a, body#news #t-news a, body#sponsors #t-sponsors a {
+	background: rgb(224,226,238);
+	background: -moz-linear-gradient(top, rgba(224,226,238,1) 0%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(224,226,238,1)), color-stop(100%,rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(top, rgba(224,226,238,1) 0%,rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(top, rgba(224,226,238,1) 0%,rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(top, rgba(224,226,238,1) 0%,rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0e2ee',endColorstr='#ffffff',GradientType=0 );
+	background: linear-gradient(top,rgba(224,226,238,1) 0%,rgba(255,255,255,1) 100%);
+}
