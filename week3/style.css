@@ -1,0 +1,58 @@
+h1 {font-family:sans-serif;}
+#sweden {
+	float:left;
+	width:304px;
+	padding:10px 0;
+	background:url(images/bg.gif) no-repeat top left;
+}
+#sweden dl {
+	overflow:auto;
+	width:260px;
+	margin:10px 20px;
+	padding:0;
+}
+#sweden dl:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+* html #sweden dl {height:1%;}
+*:first-child+html #sweden dl {min-height:1px;}
+#sweden dt {
+	float:right;
+	width:162px;
+	margin:0;
+	padding:0;
+	font-size:130%;
+	letter-spacing:1px;
+	color:#627081;
+}
+#sweden dd {
+	margin:0 0 0 98px;
+	padding:0;
+	font-size:85%;
+	line-height:1.5em;
+	color:#666;
+}
+#sweden dl dd.img {margin:0;}
+#sweden dd.img img {
+	float:left;
+	margin:0 8px 0 0;
+	padding:4px;
+	border:1px solid #d9e0e6;
+	border-bottom-color:#c8cdd2;
+	border-right-color:#c8cdd2;
+	background:#fff;
+	-webkit-box-shadow:1px 1px 3px rgba(0,0,0,0.12);
+	-moz-box-shadow:1px 1px 3px rgba(0,0,0,0.12);
+	box-shadow:1px 1px 3px rgba(0,0,0,0.12);
+}
+
+#sweden .alt dt {float:left;}
+#sweden .alt dd {margin:0 98px 0 0;}
+#sweden .alt dd.img img {
+	float:right;
+	margin:0 0 0 8px;
+}
