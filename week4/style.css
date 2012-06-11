@@ -1,0 +1,272 @@
+/* reset styles 
+--------------------------------------------- */
+	
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	vertical-align:baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display: block;}
+body {line-height:1;}
+ol,ul {list-style: none;}
+blockquote,q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {
+	content:'';
+	content:none;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+hr {display:none;}
+
+/* main styles
+----------------------------- */
+
+body {
+	font-family:Georgia,serif;
+	font-size:100%;
+	color:#4e443c;
+	background:#fcfaf5 url(images/grunge.png) repeat-x -80% 0 fixed;
+	padding:0 0 40px 0;
+}
+
+/* headings */
+h1 {
+	margin:0 0 20px 0;
+	font-size:1.4em;
+	font-weight:normal;
+	line-height:1.4;
+}
+h1 strong {
+	font-weight:normal;
+	letter-spacing:3px;
+}
+#main h2,#sidebar h2 {
+	margin:0 0 1em 0;
+	font-size:1.6em;
+	font-weight:normal;
+	line-height:1.3;
+}
+#main h3,#sidebar h3 {
+	margin:0;
+	font-family:"Gill Sans", Helvetica, Arial, sans-serif;
+	font-size:.9em;
+	font-weight:normal;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+
+/* links */
+a:link, a:visited {
+	font-weight:normal;
+	outline:none;
+	color:#3da2c4;
+}
+a:hover {color:#ba3b0d;}
+
+/* layout structure */
+#wrap {
+	max-width:960px;
+	margin:0 auto;
+	padding:0 30px;
+}
+#main,#sidebar {
+	font-family:Georgia,sans-serif;
+	font-size:1em;
+	line-height:1.6;
+}
+#main {
+	float:left;
+	width:60%;
+	margin:0 0 30px 0;
+	padding:0 50px 0 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+#sidebar {
+	float:right;
+	width:40%;
+	margin:0 0 30px 0;
+}
+#sidebar ul {
+	padding-bottom:20px;
+	border-bottom:1px solid rgba(68,44,24,.12);
+	-webkit-column-count:2;
+	-moz-column-count:2;
+	column-count:2;
+}
+footer[role="contentinfo"] {
+	clear:both;
+	font-family:"Gill Sans",Helvetica,Arial,sans-serif;
+	font-size:.9em;
+	text-transform:uppercase;
+	text-align:center;
+	letter-spacing:3px;
+	color:rgba(78,68,60,.5);
+}
+footer[role="contentinfo"] p#footer-logo {margin:20px 0 0 0;}
+footer[role="contentinfo"] p#footer-logo a img {
+	opacity:.3;
+	-webkit-transition:opacity .2s ease-in-out;
+	-moz-transition:opacity .2s ease-in-out;
+	-o-transition:opacity .2s ease-in-out;
+	transition:opacity .2s ease-in-out;
+}
+footer[role="contentinfo"] p#footer-logo a:hover img {opacity:.7;}
+
+/* special bar */
+#special {
+	margin:0 0 20px 0;
+	padding:10px 30px 16px 30px;
+	line-height:1.3;
+	color:rgba(255,255,255,0.5);
+	background:#6a8087 url(images/special-bg.png) repeat-x -80% 100%;
+}
+#special h2 {
+	max-width:960px;
+	margin:0 auto;
+	font-weight:normal;
+}
+#special h2 strong {
+	font-family:"Gill Sans", Helvetica, Arial, sans-serif;
+	font-size:.9em;
+	font-weight:normal;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	color:#fff;
+}
+
+/* header */
+header[role="banner"] {
+	margin:0 0 20px 0;
+	padding:0 0 20px 0;
+	border-bottom:3px solid rgba(68,44,24,.12);
+}
+header[role="banner"]:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+/* logo */
+#logo {
+	float:left;
+	width:20%;
+}
+
+/* navigation */
+nav[role="navigation"] ul li {
+	float:left;
+	width:20%;
+	margin:20px 0 0 0;
+}
+nav[role="navigation"] ul li a {
+	float:left;
+	width:100%;
+	font-family:"Gill Sans",Helvetica,Arial,sans-serif;
+	font-size:1em;
+	line-height:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	text-transform:uppercase;
+	letter-spacing:3px;
+}
+nav[role="navigation"] ul li a strong {
+	display:block;
+	padding:0;
+	color:rgba(78,68,60,.5);
+	-webkit-transition:color 0.2s ease-in-out;
+	-moz-transition:color 0.2s ease-in-out;
+	-o-transition:color 0.2s ease-in-out;
+	transition:color 0.2s ease-in-out;
+}
+nav[role="navigation"] ul li a em {
+	display:block;
+	font-weight:normal;
+	font-style:normal;
+	text-transform:none;
+	letter-spacing:0;
+	color:rgba(78,68,60,.35);
+	-webkit-transition:color 0.2s ease-in-out;
+	-moz-transition:color 0.2s ease-in-out;
+	-o-transition:color 0.2s ease-in-out;
+	transition:color 0.2s ease-in-out;
+}
+nav[role="navigation"] ul li a:hover strong,nav[role="navigation"] ul li.active a strong {color:#4e443c;}
+nav[role="navigation"] ul li a:hover em,nav[role="navigation"] ul li.active a em {color:rgba(78,68,60,.7);}
+
+figure img, embed, object, video {max-width:100%;}
+
+/* callout box */
+div.callout {
+	margin:0 0 20px 0;
+	padding:25px;
+	text-align:center;
+	background:#f5eacb;
+	background:rgba(223,174,42,.2);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+#sidebar div.callout p {
+	margin:0;
+	font-size:1.1em;
+	line-height:1.4;
+}
+
+/* responsiveness
+----------------------------- */
+@media screen and (max-width: 800px) {
+	nav[role="navigation"] ul li {margin:26px 0 0 0;}
+	nav[role="navigation"] ul li a {font-size:.9em;}
+	nav[role="navigation"] ul li a em {display:none;}
+	#main, #sidebar {
+		float:none;
+		width:auto;
+		padding:0;
+		font-size:.9em;
+		line-height:1.5;
+	}
+}
+@media screen and (max-width: 550px) {
+	#wrap {padding:0 15px;}
+	#special {
+		padding-left:15px;
+		padding-right:15px;
+		font-size:1.2em;
+		line-height:1.3;
+	}
+	#logo {
+		float:none;
+		margin:0 auto 20px auto;
+	}
+	nav[role="navigation"] ul {text-align:center;}
+	nav[role="navigation"] ul li {
+		float:none;
+		display:inline;
+		width:auto;
+		margin:0 4px;
+		font-size:.75em;
+	}
+	nav[role="navigation"] ul li a {
+		float:none;
+		display:inline;
+		width:auto;
+	}
+	nav[role="navigation"] ul li a strong {display:inline;}
+	#main h1 {
+		font-size:1.2em;
+		line-height:1.4;
+	}
+	footer[role="contentinfo"] p {
+		margin-right:20px;
+		margin-left:20px;
+	}
+}
