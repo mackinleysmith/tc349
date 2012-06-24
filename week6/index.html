@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="Author" content="MacKinley Smith">
+		<meta name="viewport" content="width=device-width" />
+		<title>TC349 Week 4: Bulletproof Pretzel Co. Website</title>
+		<style type="text/css">
+		body {
+			text-align:center;
+		}
+		#box {
+			width:500px;
+			height:500px;
+			background:purple;
+			margin:0 auto;
+		}
+		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/jquery.flip.js"></script>
+		<script type="text/javascript">
+		(function($){$(document).ready(function(){
+			$("#explode").click(function(e){
+				e.preventDefault();
+				$("#box").hide("explode",{},400,function(){$("#box").show("fade",{},400);});
+			});
+			
+			var currentColor = 'purple';
+			$('#color').click(function(e){
+				e.preventDefault();
+				var newColor, colors = ['red','yellow','green','blue','purple'];
+				while (newColor==null || newColor==currentColor) newColor = colors[Math.floor(Math.random()*colors.length)];
+				currentColor = newColor;
+				$('#box').animate({backgroundColor:newColor},400);
+			});
+			
+			$('#flip').click(function(e){
+				e.preventDefault();
+				$("#box").flip({direction:'tb',color:currentColor});
+			});
+		});})(jQuery);
+		</script>
+	</head>
+	<body>
+		<h1>TC349 Week 6: jQuery Box Modifications</h1>
+		<div id="box"></div>
+		<ul id="linklist">
+			<li><a href="#" id="explode">Explode</a></li>
+			<li><a href="#" id="color">Change Color</a></li>
+			<li><a href="#" id="flip">3D Flip</a></li>
+		</ul>
+	</body>
+</html>
