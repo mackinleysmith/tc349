@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8" />
+		<title>Contact Us | Hyperion Studios - Transforming your Dreams into Successful Online Businesses</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+		<meta content="MacKinley Smith" name="author" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" media="screen" href="font/font-face.css" />
+		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+		<style type="text/css">
+		input[type=text], input[type=email] {
+			font:14px TitilliumRegular;
+			width:948px;
+			height:30px;
+			margin:5px 0;
+			padding:2px 5px;
+			border:1px solid #333;
+			border-radius:5px;
+			box-shadow:inset 0 0 5px black;
+		}
+		#message_field {
+			font:14px TitilliumRegular;
+			width:938px;
+			height:250px;
+			margin:5px 0;
+			padding:10px;
+			resize:none;
+			border:1px solid #666;
+			border-radius:5px;
+			box-shadow:inset 0 0 5px black;
+		}
+		#send_button {
+			font:14px TitilliumRegular;
+			width:100%;
+			height:50px;
+			margin-top:5px;
+			border:1px solid #666;
+			border-radius:5px;
+		}
+		#send_button:active {
+			border-color:#333;
+			box-shadow:inset 0 0 5px black;
+		}
+		</style>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/layout.js"></script>
+		<script type="text/javascript">
+		(function($){$(document).ready(function(){
+			$("#contact_form").submit(function(){return false;});
+		});})(jQuery);
+		</script>
+	</head>
+	<body>
+		<h1>Contact Us</h1>
+		<form id="contact_form" action="#" method="post">
+			<input type="text" id="fullname_field" name="fullname" placeholder="Your full name&hellip;" />
+			<input type="email" id="email_field" name="email" placeholder="Your email address&hellip;" />
+			<input type="text" id="title_field" name="title" placeholder="Message title&hellip;" />
+			<textarea id="message_field" name="message" placeholder="Write your message here&hellip;"></textarea>
+			<button id="send_button" name="send_button">Send</button>
+		</form>
+	</body>
+</html>

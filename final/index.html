@@ -6,6 +6,7 @@
 		<title>Hyperion Studios - Transforming your Dreams into Successful Online Businesses</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 		<meta content="MacKinley Smith" name="author" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" media="screen" href="font/font-face.css" />
 		<link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 		<style type="text/css">
@@ -22,96 +23,125 @@
 			color:#ffff00;
 			padding:150px 0;
 		}
-		#slideshow .slideshow_caption {
-			color:#ffff00;
+		#slideshow .slide_caption {
 			padding:10px;
 			box-shadow:0 -10px 10px -10px black;
 		}
-		#slideshow .slideshow_caption :first-child {margin-top:0;}
-		#slideshow .slideshow_caption :last-child {margin-bottom:0;}
+		#slideshow .slide img {
+			width:100%;
+			height:500px;
+		}
+		#slideshow .slide_caption :first-child {margin-top:0;}
+		#slideshow .slide_caption :last-child {margin-bottom:0;}
+		#slideshow .slide {display:none;}
 		
 		.service_row {
+			height:180px;
 			display:table-row;
 		}
-		.service_row .service {
+		.service_cell {
 			display:table-cell;
 			width:298px;
+			height:100%;
 			padding:10px;
-			color:#ffff00;
 			background:rgba(0,0,0,0.3);
 			border:1px solid #222;
 			border-radius:5px;
 			box-shadow:0 0 10px black;
 		}
-		.service_row .service h4 {
+		.service_wrap {
+			position:relative;
+			height:100%;
+			padding-bottom:10px;
+		}
+		.service_wrap h4 {
 			margin:0;
 			text-align:center;
 		}
+		.service_wrap a.learn_more {
+			position:absolute;
+			bottom:10px;
+		}
 		</style>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.js"></script>
+		<script type="text/javascript" src="js/layout.js"></script>
+		<script type="text/javascript" src="js/jquery.hyperionSlide.min.js"></script>
 		<script type="text/javascript">
 		(function($){$(document).ready(function(){
-			var img = new Image();
-			var url = 'images/Grunge_gray_02.jpg';
-			$(img).attr('src',url).load(function(){
-				$(this).hide();
-				$('#background').css('background-image','url('+url+')').animate({opacity:.8},800);
-			});
+			$('#slideshow').hyperionSlide();
 		});})(jQuery);
 		</script>
 	</head>
 	<body>
-		<div id="background"></div>
-		<div id="wrap">
-			<header>
-				<img src="images/logo.png" id="logo" />
-				<nav role="navigation">
-					<ul>
-						<li><a href="">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Our Work</a></li>
-						<li><a href="#">Testimonials</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
-			<div id="slideshow">
-				<h2>SLIDESHOW GOES HERE</h2>
-				<div class="slideshow_caption">
-					<p>Hyperion Studios is an up-and-coming web development firm named for Hyperion, Greek mythology's Titan of Light.  We will siege the web industry by harnessing the incredible power of PHP and jQuery.  Wielding these mighty tools, we aim to bring forth a new online era, characterized by clever, intuitive designs coupled with lightning-fast object oriented code.  We will be the enzyme responsible for the internet's next major evolution.  We are… HYPERION!</p>
+		<div id="slideshow">
+			<div class="slide">
+				<img src="images/leonidas.jpg" alt="Photo by Ava Babili" />
+				<div class="slide_caption">
+					<p>Hyperion Studios is an up-and-coming web development firm named for Hyperion, Greek mythology's Titan of Light.  We will siege the web industry by harnessing the incredible power of PHP and jQuery.  Wielding these mighty tools, we aim to bring forth a new online era, characterized by clever, intuitive designs coupled with lightning-fast object oriented code.  We will be the enzyme responsible for the internet's next major evolution.  We&hellip; are&hellip; <b>HYPERION!</b><br /><i>Photo Credit: <a href="http://www.flickr.com/photos/ava_babili/" target="_blank">Ava Babili</a></i></p>
+					<a href="about.html#slide1">Learn more&hellip;</a>
 				</div>
 			</div>
-			<div class="service_row">
-				<div class="service">
+			<div class="slide">
+				<img src="images/zeus.jpg" alt="Photo by ElefMcLean" />
+				<div class="slide_caption">
+					<p>Hyperion provides a strategically tailored service designed to transform your ideas and dreams into successful online businesses.  We provide services to design state-of-the-art websites, as well as build and grow online identities. We have Search Engine Optimization (SEO) experts working on premise to offer advice and expertise.  We also provide social media and online advertising services to help turn heads in your company's direction. Speak with a representative today for more information.<br /><i>Photo Credit: <a href="http://www.flickr.com/photos/eaf_perspectives/" target="_blank">ElefMcLean</a></i></p>
+					<a href="about.html#slide2">Learn more&hellip;</a>
+				</div>
+			</div>
+			<div class="slide">
+				<img src="images/athens_academy.jpg" alt="Photo by Selbe B" />
+				<div class="slide_caption">
+					<p>Hyperion Studios can help you to join the ranks of the Internet Gods! From start to finish, we are fully committed to ensuring your success. Utilize our staff of expert web developers, programming gurus, marketing analyists, data scientists, database engineers to bring your next project the meteoric rise to fame that it deserves.  Contact us today to speak with a Hyperion representative about how we can transform your dreams into reality!<br /><i>Photo Credit: <a href="http://www.flickr.com/photos/stacylynn/" target="_blank">Selbe B</a></i></p>
+					<a href="about.html#slide3">Learn more&hellip;</a>
+				</div>
+			</div>
+		</div>
+		<div class="service_row">
+			<div class="service_cell">
+				<div class="service_wrap">
 					<h4>Digital Weaponry</h4>
 					<p>No matter the task, choosing the right set of tools is substantial to your company's success.  Hyperion is here to lend you a helping hand.  Employ our extensive staff of highly-trained professionals, brilliant data scientists, and marketing experts on your next mission, and stay two steps ahead of the competition.</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
 				</div>
-				<div class="service">
+			</div>
+			<div class="service_cell">
+				<div class="service_wrap">
 					<h4>Traffic Direction</h4>
 					<p>Already have a killer website, but having trouble attracting consumer attention?  Let Hyperion's experts handle your advertising and Search Engine Optimization.  Being named after the Titan of Light allows us to spread the word about your business faster than the speed of light (186,000 miles per second)!</p>
-				</div>
-				<div class="service">
-					<h4>Cloud Engineering</h4>
-					<p>Here at Hyperion, we're rather fond of clouds.  We train our staff using Amazon Web Services, a great medium for deployment of self-scaling cloud apps.  If you need a resource-hungry beast, talk to us today about how we can lower your service costs.</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
 				</div>
 			</div>
-			<div class="service_row">
-				<div class="service">
+			<div class="service_cell">
+				<div class="service_wrap">
+					<h4>Cloud Engineering</h4>
+					<p>Here at Hyperion, we're rather fond of clouds.  We train our staff using Amazon Web Services, a great medium for deployment of self-scaling cloud apps.  If you need a resource-hungry beast, speak with a representative today about how we can leverage awesome power while lowering your service costs.</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
+				</div>
+			</div>
+		</div>
+		<div class="service_row">
+			<div class="service_cell">
+				<div class="service_wrap">
 					<h4>UI Design</h4>
-					<p>Hyperion's user-interface design team employs state of the art tactics and techniques to create compelling management interfaces for even the most complicated of programming.  Learn more today!</p>
+					<p>Hyperion's user-interface design team employs state of the art tactics and techniques to create compelling management interfaces for even the most complicated of programming.  See our fine work for yourself in the Portfolio section!</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
 				</div>
-				<div class="service">
+			</div>
+			<div class="service_cell">
+				<div class="service_wrap">
 					<h4>API Communication</h4>
-					<p>Want to work with the latest internet giants, like YouTube and Twitter?  We have a team of API experts ready to make your site communicate with others.</p>
+					<p>Want to work with the latest internet giants, like YouTube and Twitter?  We have a team of API experts ready to make your site communicate with others. Let us help your company build a reputation of technological advancement.</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
 				</div>
-				<div class="service">
+			</div>
+			<div class="service_cell">
+				<div class="service_wrap">
 					<h4>Social Media</h4>
 					<p>Your online image is crucial to your business performance.  Hyperion offers Social Media Management services for those of you who aren't social media savvy, or simply don't have the time to keep up.  Let us build you a better company image!</p>
+					<a href="#" class="learn_more">Learn more&hellip;</a>
 				</div>
 			</div>
-			<footer>
-				<p>Copyright &copy; 2012 MacKinley Smith.  All rights reserved.</p>
-			</footer>
 		</div>
 	</body>
 </html>
